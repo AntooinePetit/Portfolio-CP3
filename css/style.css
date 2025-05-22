@@ -466,3 +466,90 @@ footer {
     border: none;
   }
 }
+
+/* Responsive tablette */
+
+@media screen and (max-width:1024px) {
+  /* Page accueil */
+
+  /* Section 2 : À propos */
+  #about{
+    div{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/* Responsive mobile */
+
+@media screen and (max-width:767px) {
+  /* Header */
+
+  header{
+    .container-1540{
+      nav{
+        display: none;
+      }
+
+      #burgermenu{
+        display: block;
+      }
+    }
+  }
+
+  /* Footer */
+
+  footer{
+    .container-1540{
+      > div{
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+
+  /* Animation */
+
+  @keyframes slideOut {
+    0%{
+      right: -17px;
+    }
+    100%{
+      right: -47px;
+    }
+  }
+
+  /* Eléments réutilisables */
+
+  .liste-projets{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Page accueil */
+
+  /* Section 1 : Présentation */
+
+  #presentation {
+    height: fit-content;
+    padding: 25px 0;
+    .container-1540{
+      grid-template-columns: 1fr;
+
+      img{
+        margin: 20px 0;
+      }
+    }
+  }
+
+  /* Section 4 : Contact */
+
+  #contact{
+    form{
+      grid-template-columns: 1fr;
+
+      span{
+        grid-column: 1 !important;
+      }
+    }
+  }
+}
