@@ -43,6 +43,7 @@ h1 {
 
 h2 {
   font-size: 36px;
+  text-align: center;
 }
 
 p,
@@ -87,6 +88,20 @@ img {
   width: fit-content;
 }
 
+.link {
+  color: var(--secondary-color);
+  position: relative;
+
+  &:hover {
+    i {
+      position: absolute;
+      top: 3px;
+      animation: 0.5s slideOut;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
 .tag {
   padding: 5px 12px;
   background: var(--light-grey);
@@ -109,6 +124,17 @@ section {
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Animations */
+
+@keyframes slideOut {
+  0% {
+    right: -17px;
+  }
+  100% {
+    right: -117px;
+  }
 }
 
 /* Header */
@@ -260,6 +286,52 @@ footer {
       object-fit: cover;
       justify-self: center;
       border: 4px solid var(--white);
+    }
+  }
+}
+
+/* Section 2 : À propos */
+
+#about {
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+
+    article {
+      h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+      }
+
+      p {
+        margin-bottom: 25px;
+      }
+
+      div{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+        span{
+          justify-self: center;
+          text-align: center;
+
+          i{
+            color: var(--primary-color);
+            font-size: 50px;
+            margin-bottom: 20px;
+          }
+
+          p{
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 }
