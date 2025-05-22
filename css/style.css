@@ -279,9 +279,7 @@ footer {
   }
 }
 
-/* Page accueil */
-
-/* Section 1 : Présentation */
+/* Présentation */
 
 #presentation {
   height: 100vh;
@@ -337,7 +335,7 @@ footer {
   }
 }
 
-/* Section 2 : À propos */
+/* À propos */
 
 #about {
   h2 {
@@ -385,7 +383,7 @@ footer {
   }
 }
 
-/* Section 3 : Projets récents */
+/* Projets récents */
 
 #projects {
   background: var(--light-grey);
@@ -408,7 +406,7 @@ footer {
   }
 }
 
-/* Section 4 : Contact */
+/* Contact */
 
 #contact {
   p {
@@ -469,9 +467,7 @@ footer {
 /* Responsive tablette */
 
 @media screen and (max-width: 1024px) {
-  /* Page accueil */
-
-  /* Section 2 : À propos */
+  /* À propos */
   #about {
     div {
       grid-template-columns: 1fr;
@@ -524,9 +520,7 @@ footer {
     grid-template-columns: 1fr !important;
   }
 
-  /* Page accueil */
-
-  /* Section 1 : Présentation */
+  /* Présentation */
 
   #presentation {
     height: fit-content;
@@ -540,7 +534,7 @@ footer {
     }
   }
 
-  /* Section 4 : Contact */
+  /* Contact */
 
   #contact {
     form {
